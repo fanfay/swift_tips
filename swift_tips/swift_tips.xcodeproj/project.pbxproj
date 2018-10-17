@@ -14,6 +14,10 @@
 		D5A049DC21771575002044E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A049DA21771575002044E7 /* LaunchScreen.storyboard */; };
 		D5A049E721771575002044E7 /* swift_tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A049E621771575002044E7 /* swift_tipsTests.swift */; };
 		D5A049F221771575002044E7 /* swift_tipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A049F121771575002044E7 /* swift_tipsUITests.swift */; };
+		D5A04A022177176A002044E7 /* FayNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A04A012177176A002044E7 /* FayNavigationController.swift */; };
+		D5A04A0421771F3F002044E7 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A04A0321771F3F002044E7 /* ViewController2.swift */; };
+		D5A04A0621771F48002044E7 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A04A0521771F48002044E7 /* ViewController3.swift */; };
+		D5A04A0A2177246D002044E7 /* UINavigationController+NavBarTransparent.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A04A082177246C002044E7 /* UINavigationController+NavBarTransparent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 		D5A049ED21771575002044E7 /* swift_tipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_tipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A049F121771575002044E7 /* swift_tipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_tipsUITests.swift; sourceTree = "<group>"; };
 		D5A049F321771575002044E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A04A012177176A002044E7 /* FayNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FayNavigationController.swift; sourceTree = "<group>"; };
+		D5A04A0321771F3F002044E7 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		D5A04A0521771F48002044E7 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		D5A04A072177246B002044E7 /* swift_tips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_tips-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5A04A082177246C002044E7 /* UINavigationController+NavBarTransparent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NavBarTransparent.m"; sourceTree = "<group>"; };
+		D5A04A092177246C002044E7 /* UINavigationController+NavBarTransparent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NavBarTransparent.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,11 @@
 		D5A049D021771574002044E7 /* swift_tips */ = {
 			isa = PBXGroup;
 			children = (
+				D5A049FF2177166F002044E7 /* GobalView */,
 				D5A049D121771574002044E7 /* AppDelegate.swift */,
 				D5A049D321771574002044E7 /* ViewController.swift */,
+				D5A04A0321771F3F002044E7 /* ViewController2.swift */,
+				D5A04A0521771F48002044E7 /* ViewController3.swift */,
 				D5A049D521771574002044E7 /* Main.storyboard */,
 				D5A049D821771575002044E7 /* Assets.xcassets */,
 				D5A049DA21771575002044E7 /* LaunchScreen.storyboard */,
@@ -123,6 +136,25 @@
 				D5A049F321771575002044E7 /* Info.plist */,
 			);
 			path = swift_tipsUITests;
+			sourceTree = "<group>";
+		};
+		D5A049FF2177166F002044E7 /* GobalView */ = {
+			isa = PBXGroup;
+			children = (
+				D5A04A002177173F002044E7 /* FayNavigationController */,
+			);
+			path = GobalView;
+			sourceTree = "<group>";
+		};
+		D5A04A002177173F002044E7 /* FayNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D5A04A012177176A002044E7 /* FayNavigationController.swift */,
+				D5A04A092177246C002044E7 /* UINavigationController+NavBarTransparent.h */,
+				D5A04A082177246C002044E7 /* UINavigationController+NavBarTransparent.m */,
+				D5A04A072177246B002044E7 /* swift_tips-Bridging-Header.h */,
+			);
+			path = FayNavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +225,7 @@
 				TargetAttributes = {
 					D5A049CD21771574002044E7 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					D5A049E121771575002044E7 = {
 						CreatedOnToolsVersion = 9.3;
@@ -256,8 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A04A0A2177246D002044E7 /* UINavigationController+NavBarTransparent.m in Sources */,
+				D5A04A0621771F48002044E7 /* ViewController3.swift in Sources */,
 				D5A049D421771574002044E7 /* ViewController.swift in Sources */,
+				D5A04A0421771F3F002044E7 /* ViewController2.swift in Sources */,
 				D5A049D221771574002044E7 /* AppDelegate.swift in Sources */,
+				D5A04A022177176A002044E7 /* FayNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,14 +467,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N36QML33YE;
 				INFOPLIST_FILE = swift_tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fay.www.swift-tips";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fay.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_tips/GobalView/FayNavigationController/swift_tips-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,14 +488,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N36QML33YE;
 				INFOPLIST_FILE = swift_tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.fay.www.swift-tips";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fay.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift_tips/GobalView/FayNavigationController/swift_tips-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

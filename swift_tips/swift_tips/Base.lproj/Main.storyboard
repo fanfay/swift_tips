@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg5-IS-A1D">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Fay Navigation Controller-->
+        <scene sceneID="JCa-Ji-YBz">
+            <objects>
+                <navigationController id="Wg5-IS-A1D" customClass="FayNavigationController" customModule="swift_tips" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Jg-co-9hA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XKb-5k-LI9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgu-kN-lFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1235" y="101"/>
+        </scene>
+        <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift_tips" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw1-Mb-vwY">
+                                <rect key="frame" x="170.5" y="318" width="34" height="30"/>
+                                <state key="normal" title="jump"/>
+                                <connections>
+                                    <segue destination="cNT-Nx-oZu" kind="show" id="Tmd-g3-vw8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uw1-Mb-vwY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FXc-1A-1gT"/>
+                            <constraint firstItem="uw1-Mb-vwY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NYF-SX-l9z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ViewController" id="aEb-V6-Pdt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-513" y="100"/>
+        </scene>
+        <!--ViewController2-->
+        <scene sceneID="9sO-DE-IbV">
+            <objects>
+                <viewController id="cNT-Nx-oZu" customClass="ViewController2" customModule="swift_tips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k7f-sZ-3sH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKV-nT-Kjy">
+                                <rect key="frame" x="170.5" y="318" width="34" height="30"/>
+                                <state key="normal" title="jump"/>
+                                <connections>
+                                    <segue destination="gh6-M2-qIP" kind="show" id="bIB-Od-Aeh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22791465617237483" green="1" blue="0.30146115673953966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kKV-nT-Kjy" firstAttribute="centerX" secondItem="k7f-sZ-3sH" secondAttribute="centerX" id="KS2-gB-cKd"/>
+                            <constraint firstItem="kKV-nT-Kjy" firstAttribute="centerY" secondItem="k7f-sZ-3sH" secondAttribute="centerY" id="VKo-4b-iaa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KTV-Rz-sHw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ViewController2" id="PpI-RU-0I2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKw-zJ-Z46" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="100"/>
+        </scene>
+        <!--ViewController3-->
+        <scene sceneID="Cfp-Vz-guG">
+            <objects>
+                <viewController id="gh6-M2-qIP" customClass="ViewController3" customModule="swift_tips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9D-fx-Upq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7z-KT-zSO">
+                                <rect key="frame" x="170.5" y="318" width="34" height="30"/>
+                                <state key="normal" title="jump"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s7z-KT-zSO" firstAttribute="centerY" secondItem="W9D-fx-Upq" secondAttribute="centerY" id="GUx-So-U1i"/>
+                            <constraint firstItem="s7z-KT-zSO" firstAttribute="centerX" secondItem="W9D-fx-Upq" secondAttribute="centerX" id="qUD-za-fNf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TOG-W4-fgT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ViewController3" id="M91-lN-QEE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Rc-4x-blr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="100"/>
         </scene>
     </scenes>
 </document>
